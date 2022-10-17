@@ -3,3 +3,5 @@ hi this is text
 this line was added from vscode :)
 
 another line from vscode
+
+line 3
