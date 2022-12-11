@@ -19,6 +19,10 @@ Y_pred = reg.predict(X)
 plt.scatter(X,y,color = "red")
 plt.plot(X,Y_pred,color = "blue")
 
+plt.xlabel("emp Level")
+plt.ylabel("Salary")
+plt.title("rfr")
+
 plt.show()
 
 
