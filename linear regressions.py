@@ -41,6 +41,8 @@ reg.fit(X_train, Y_train)
 
 Y_pred = reg.predict(X_test)
 
+print("predicted value =\n",Y_pred,"\n")
+print("actual value = \n",Y_test,"\n")
 
 print("R^2 : ", r2_score(Y_test, Y_pred))
 print("MAE :", mean_absolute_error(Y_test, Y_pred))
