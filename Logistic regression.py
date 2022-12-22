@@ -50,8 +50,8 @@ print("Confusion matrix: \n",cm)
 # Visualising the Training set results
 X_set, y_set = X_train, y_train
 # X, X2 = np.meshgrid(np.arange(start=X_set[:, 0].min() - 1, stop=X_set[:, 0].max() + 1, step=0.01), np.arange(start=X_set[:, 1].min() - 1, stop=X_set[:, 1].max() + 1, step=0.01))
-X, X2 = np.meshgrid(np.arange(X_set[:, 0].min() - 1, stop=X_set[:, 0].max(
-) + 1, step=0.01), np.arange(X_set[:, 1].min() - 1, stop=X_set[:, 1].max() + 1, step=0.01))
+X, X2 = np.meshgrid(np.arange(X_set[:, 0].min() - 1, X_set[:, 0].max() + 1, step=0.01), 
+		    np.arange(X_set[:, 1].min() - 1, X_set[:, 1].max() + 1, step=0.01))
 
 probs = logisticregression.predict(np.array([X.ravel(), X2.ravel()]).T).reshape(X.shape)
 
@@ -71,7 +71,8 @@ plt.show()
 
 # Visualising the Test set results
 X_set, y_set = X_test, y_test
-X, X2 = np.meshgrid(np.arange(start=X_set[:, 0].min() - 1, stop=X_set[:, 0].max() + 1, step=0.01), np.arange(start=X_set[:, 1].min() - 1, stop=X_set[:, 1].max() + 1, step=0.01))
+X, X2 = np.meshgrid(np.arange(X_set[:, 0].min() - 1, X_set[:, 0].max() + 1, step=0.01), 
+		    np.arange(X_set[:, 1].min() - 1, X_set[:, 1].max() + 1, step=0.01))
 
 probs = logisticregression.predict(np.array([X.ravel(), X2.ravel()]).T).reshape(X.shape)
 plt.contourf(X, X2, probs, alpha=0.75)
