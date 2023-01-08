@@ -1,4 +1,2 @@
 # kollege
-college
-thish is kollege readme
-hello line 4
+this repo contains all the tasks done for the college
